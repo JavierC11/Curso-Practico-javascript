@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos y porsentajes || Clase practica de javascript en platzi</title>
+    <link rel="stylesheet" href="./descuentos.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo de descuentos para nuestros productos</h1>
+        <p>En esta pagina vamos a calcular el monto total segun el % de nuestros descuento</p>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <label for="inputproduc">Ingresa el valor del producto</label>
+                    <input type="number" id="inputproduc">
+                <label for="inputdiscount">ingresa el % del descuento</label>
+                    <input type="number" id="inputdiscount">
+                <label for="inputcupones">ingresa el % del cupon que tienes</label>
+                    <input type="number" id="inputcupones">    
+                <button onclick="Calculardescuento()" type="button">Calcular Descuento</button>    
+            </form>
+            <p id="answere"></p>
+        </section>
+    </main>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
