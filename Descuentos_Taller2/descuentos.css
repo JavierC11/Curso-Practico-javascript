@@ -7,20 +7,32 @@
  html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
-    background-color: rgb(217, 243, 242);
-    margin: 20px;
+    background-color: rgb(230, 230, 230);
  }
  
  .header-title{
+     background-color: black;
      text-align: center;
      padding: 20px;
      font-weight: bold;
      font-size: 1.5rem;
      min-width: 250px;
+     
+ }
+
+ .header-title  h1{
+     color: rgb(177, 164, 92);
+ }
+ .logo{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
  }
 
 
+
  .header-title p{
+     color: #FFFF;
     margin-top: 20px;
     font-weight: 500;
     font-size: 1.2rem;
@@ -28,22 +40,73 @@
 
 main{
     width: 100%;
-    height: auto;
+    height: auto;  
+    background-color:rgb(255, 253, 240) 
+}
 
+
+.secntioncontainer{
+    padding: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
-main input{
-    size: 20px;
+.tittle-container--calculate{
+    text-align: center;
+    margin-bottom: 20px;
 }
  
 main .main-container-calculate{
-    text-align: center;
-     margin: 20px;
-     padding: 10px;
-     border-radius: 9px;
-    border: solid 5px #2F5DA8;
-    background-color:rgb(150, 235, 230);
-    display: flex;
-    align-self: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 9px;
+   /* border: solid 3px rgb(48, 47, 47);*/
+    background-color: white;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -3px -4px 4px rgba(173, 173, 173, 0.25);
+    max-width: 400px;
+    display: grid;
+ }
+
+ .button-discount{
+     color: #FFFF;
+     background:rgb(175, 175, 214);
+     width: 200px;
+     height: 35px;
+     border-radius: 5px;
+     border:solid 2px rgb(70, 69, 69);
+     
+ }
+
+.main-cointainer-card--cupons{
+  width: 100%;
+  height: auto;
+  align-self: center;
+  align-items: center;
+  background-position: center;
+  display: block;
+  margin-top: 50px;
+ }
+
+ .main-cointainer-card--cupons figure{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+
+ }
+
+ .main-cointainer-card--cupons img{
+     
+     width: 200px;
+     height: 200px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     display: block;
+     margin: auto;
+
  }

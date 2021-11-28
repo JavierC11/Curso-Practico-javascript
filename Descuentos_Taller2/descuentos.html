@@ -14,11 +14,14 @@
 </head>
 <body>
     <header class="header-title">
-        <h1>Calculo Descuentos</h1>
+        <h1><img class="logo" src="./imagenes/136500249_104239861631911_3775742159535316766_n.png"></img> Estilo Dorado</h1>
         <p>En esta pagina vamos a calcular el monto total segun el % de nuestros descuento</p>
     </header>
     <main>
-        <section class="main-container-calculate">
+
+        <section class="secntioncontainer">
+            <H2 class="tittle-container--calculate">Ingrese los valores solicitados.</H2>
+        <article class="main-container-calculate">
             <form action="">
                 <label for="inputproduc"> Ingresa el valor del producto</label>
                     <input type="number" id="inputproduc">
@@ -30,9 +33,15 @@
                     <input type="number" id="inputcupones">
                     <br>
                     <br>    
-                <button onclick="Calculardescuento()" type="button">Calcular Descuento</button>    
+                <button class="button-discount" onclick="Calculardescuento()" type="button">Calcular Descuento</button>    
             </form>
             <p id="answere"></p>
+        </article>
+        <article class="main-cointainer-card--cupons">
+            <figure>
+            <img src="./imagenes/2.png" alt="">
+        </figure>
+        </article>
         </section>
     </main>
     <script src="./descuentos.js"></script>
