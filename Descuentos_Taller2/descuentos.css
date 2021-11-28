@@ -7,6 +7,43 @@
  html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    background-color: rgb(217, 243, 242);
+    margin: 20px;
  }
  
+ .header-title{
+     text-align: center;
+     padding: 20px;
+     font-weight: bold;
+     font-size: 1.5rem;
+     min-width: 250px;
+ }
+
+
+ .header-title p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+ }
+
+main{
+    width: 100%;
+    height: auto;
+
+    
+}
+
+main input{
+    size: 20px;
+}
  
+main .main-container-calculate{
+    text-align: center;
+     margin: 20px;
+     padding: 10px;
+     border-radius: 9px;
+    border: solid 5px #2F5DA8;
+    background-color:rgb(150, 235, 230);
+    display: flex;
+    align-self: center;
+ }
