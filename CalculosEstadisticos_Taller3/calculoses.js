@@ -1,10 +1,10 @@
 //Helpters
 
-console.log("Puedes usar la funcion 'promedioponderado' y darle tu array para buscar el promedio ponderado");
+console.log("Muchas de nuestras funcionesgu");
 
 
 //****************************************************************** */
-
+//this is a function on the mode (the mode is the value with the most repetitions in the list)
 function CalcularModa(list1){
 const ListaCount = {};
 
@@ -23,12 +23,13 @@ const ListaObjet = Object.entries(ListaCount).sort(function(a,b){
 });
 
 const moda = ListaObjet[ListaObjet.length - 1];
-return console.log("Encontramos la moda de su array es "+moda[0]+ " y se repite "+moda[1]+ " veces" ) ;
+return console.log("La moda de su array es "+moda[0]+ " y se repite un total de "+moda[1]+ " veces" ) ;
 }
 
 
 
-//In this function we ma
+//In this function we found the "mediana" this functions works better than the normal averange because 
+//we can fix some statistical issues
 function Buscar_Mediana(List){
     const listaordenada = List.sort(function(a,b){
         return a - b; 
@@ -90,13 +91,13 @@ function promediogeometrico(list_promedio_geo){
     });
 
     const resultado = Math.pow(totalmulti, 1/n);
-    console.log("Encontramos el promedio geometrico de esta ejercicio estamos muy felices por que estamos aprendiendo mucho con esos ejercicis " +resultado);
+    return resultado;
 }
 
 
 //We make the "Promedio Ponderado"
 
-function promedioponderado(hola){
+function promedioponderado(){
 
     const notes = [
         {course: "Math",
@@ -134,12 +135,61 @@ function promedioponderado(hola){
 
     const resultado = sumacusewithcredit / sumcredit ;
     
-    console.log(resultado);
-    console.log(typeof(credit));
-    console.log(credit);
+    console.log(resultado); 
+}
+
+
+function calcularsalariosGT(){
+
+//We are goint to make the last function for finding the Top10% of the salarys and the media of the salarys
+const SalariosGT = guatemala.map(function(Persona){
+        return Persona.salary;
+    });
+
+    const salariosorderGT = SalariosGT.sort(function(a,b){
+        return a - b;
+    }); 
+
+    function calcularmediana(Lista){
+        let mediana;
+        const mitadlista = parseInt(Lista.length / 2);
+
+        if((Lista.length % 2) === 0){
+
+             const persona1 = Lista[mitadlista - 1 ];
+             const persona2 = Lista[mitadlista];
+
+             mediana = Calcularpromedio([persona1, persona2]); 
+             return mediana;
+
+        }else{
+            mediana = Lista[mitadlista];
+            return mediana;
+        }
+    }
+
+
     
+    //making the top 10%
+    const knife  =  parseInt( (90 * SalariosGT.length)/100);
+    const count = parseInt( (SalariosGT.length - knife)); 
+    const salariosgtto10 = salariosorderGT.splice(knife, count,);
+
+
+
+    //I let my values in my constant
+    const medianageneralsalariosgt = calcularmediana(salariosorderGT);
+    const medianatop10gt = calcularmediana(salariosgtto10); 
+
+
+return console.log("La Mediana del salario Guatemalteco (no incluyendo el top10%) es de Q" + medianageneralsalariosgt +
+    " Y la mediana del top 10% de Guatemaltecos es de Q"+medianatop10gt 
+);
 }
 
 
 
 
+
+
+ 
