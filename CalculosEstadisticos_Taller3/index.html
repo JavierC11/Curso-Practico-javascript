@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./calculoses.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <title>Calculos Estadisticos</title>
 </head>
 <body>
-    <header><h1>
+    <header>
+    <div>
+    <h1>
         Bienvenidos a esta pagina para practica de JS
     </h1>
     <p><br>En esta pagina puedes acceder a la consola y poner en practica cualquiera de las funciones que 
-        quieras probar</p>
-    <P>Es importante que sepas que debes ingresar los datos con el formato "([1,2,3])"</P>
+        quieras probar, Es importante que sepas que debes ingresar los datos con el formato "([1,2,3])"</p>
+     <a class="buttton-container--info" href="#contenido">Contenido</a>    
+    </div>
+    </header>
+<main>
+<div id="contenido" class="main-container-data">        
     <br>
-    <p>Te dejaremos una lista de las funciones que puedes encontrar :P</p>
+    <br>
+    <p>Te dejaremos una lista de las funciones que puedes encontrar en consola :D</p>
 <li>
     <td><tr>CalcularModa([1,2,2,3]):</tr>
         <tr>Deberia retornar el valor 2</tr>    
     </td>
 </li>
-<p>Te dejamos un pequeño concepto sobre la moda para refrescar un poco la mente :)</p>
-<p>En la estadística, la moda es el valor que aparece con mayor frecuencia en un conjunto de datos. <br> 
-    Esto va en forma de una columna cuando encontremos dos modas, es decir, dos datos que tengan la misma<br>
-    frecuencia absoluta máxima. Una distribución trimodal de los datos es en la que encontramos tres modas.<br>
-    En el caso de la distribución uniforme discreta, cuando todos los datos tienen una misma frecuencia,<br>
+<p>Te dejamos un pequeño concepto sobre la moda para refrescar un poco la mente :) <br><br>
+    En la estadística, la moda es el valor que aparece con mayor frecuencia en un conjunto de datos. 
+    Esto va en forma de una columna cuando encontremos dos modas, es decir, dos datos que tengan la misma
+    frecuencia absoluta máxima. Una distribución trimodal de los datos es en la que encontramos tres modas.
+    En el caso de la distribución uniforme discreta, cuando todos los datos tienen una misma frecuencia,
     se puede definir las modas como indicado, pero estos valores no tienen utilidad. Por eso algunos matemáticos califican<br> 
     esta distribución como «sin moda».</p>
 <li>
@@ -33,40 +43,66 @@
         <tr>Deberia retornar el valor 3</tr>    
     </td>
 </li>
+<p>Te dejamos un pequeño concepto sobre la mediana para refrescar un poco la mente :) <br><br>
+    Para calcular la mediana es importante que los datos estén ordenados de mayor a menor, o al contrario de menor a mayor. 
+    Esto es, que tengan un orden.
+
+    La mediana, junto con la media y la varianza es un estadístico muy ilustrativo de una distribución. 
+    Al contrario que la media que puede estar desplazada hacia un lado o a otro, según la distribución,
+    la mediana siempre se sitúa en el centro de esta. Dicho sea paso,
+    a la forma de la distribución se le conoce como curtosis. Con la curtosis podemos ver hacia dónde está desplaza
+    la distribución
+    </p>
+
 <li>
     <td><tr>Calcularpromedio([10,20]])</tr>
         <tr>Deberia retornar 15</tr>    
     </td>
 </li>
+<p>Te dejamos un pequeño concepto sobre el promedio para refrescar un poco la mente :) <br><br>
+    El promedio es un número representativo que puede obtenerse a partir de una lista de cifras.
+     Usualmente se relaciona con el concepto de media aritmética.
+
+    Lo anterior quiere decir que normalmente el promedio es el resultado de sumar un grupo de número y
+     dividirlo entre el número de sumandos.</p>
+
 <li>
     <td><tr>promediogeometrico([1,2,3])</tr>
         <tr>Deberia retornar 1.81</tr>    
     </td>
 </li>
+<p>Te dejamos un pequeño concepto sobre el promedio geometrico para refrescar un poco la mente :) <br><br>
+    La media geométrica es un tipo de media que se calcula como la raíz del producto de un conjunto de 
+    números estrictamente positivos.</p>
+    <img src="./imagenes/formula-media-geométrica.jpg" alt="">
+
 <li>
     <td><tr>promedioponderado()</tr>
         <tr>Deberia retornar 8.81,</tr>    
     </td>
-    <p> No es necesario que ingreses datos pues los datos ya se encuentran dentro del mismo codigo, echa un vistaso a los datos</p>
-    <p>
-        const notes = [
-        {course: "Math",
-        note: 10,
-        credit: 2,
-    },
-    {
-        course: "Fisic",
-        note: 9,
-        credit: 5,
-    },
-    {
-        course: "programacion",
-        note: 8,
-        credit: 4,
-    },
-    ];
-    </p>
 </li>
+
+<p> No es necesario que ingreses datos pues los datos ya se encuentran dentro del mismo codigo, echa un vistaso a los datos</p>
+<p>
+    const notes = [
+    {course: "Math",
+    note: 10,
+    credit: 2,
+},
+{
+    course: "Fisic",
+    note: 9,
+    credit: 5,
+},
+{
+    course: "programacion",
+    note: 8,
+    credit: 4,
+},
+];
+</p>
+
+
 <li>
     <td><tr>calcularsalariosGT()</tr>
         <tr>Deberia retornar 5000.5 y 12000</tr>    
@@ -74,8 +110,12 @@
 </li>
 <p>No es necesario ingresar datos en esta funcion pues ya contamos con ellos,
      Te invitamos a ver el codigo para esta funcion en espesifico</p>
+</div>
+</main>
+<footer>
 
-</header>
+
+</footer>
     <script src="./salarios.js"></script>
     <script src="./calculoses.js"></script>
 </body>
